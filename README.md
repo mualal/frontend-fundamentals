@@ -1,0 +1,3 @@
+# frontend-fundamentals
+
+В этом репозитории будут созданы ветки по темам: JavaScript, React, Redux, TypeScript, app-testing, dev-tools, web-design, ...
