@@ -295,3 +295,53 @@ for (let i = 0; i < 10; i++) {
     console.log(i);
 }
 console.log('end');
+
+
+// -- FUNCTION --
+console.log('\n-- FUNCTION --');
+
+function pr() {
+    console.log('hello from sum')
+}
+
+console.log(pr);
+console.log(pr());
+pr();
+
+function sum(a, b) {
+    console.log('a', a);
+    console.log('b', b);
+    return a + b;
+}
+console.log('Sum', sum(1, 5));
+console.log('Sum', sum(3, 4));
+
+const ans = sum(3, 3);
+console.log('Sum', ans);
+
+function getNumberData(question) {
+    while (true) {
+        const res = inBrowser ? +prompt(question) : +promptf(question);
+        if (res === 0 || res) {
+            return res;
+        }
+    }
+}
+
+const ageNew = getNumberData('Сколько тебе лет?');
+console.log('Age:', ageNew);
+
+const salaryNew = getNumberData('Какая у вас зарплата?');
+console.log('Salary:', salaryNew);
+
+
+// -- MATH --
+console.log('\n-- MATH --');
+
+console.log(Math.PI);
+console.log(Math.random());
+console.log(Math.random() * 10);
+console.log(Math.floor(1.9));
+console.log(Math.ceil(1.1));
+console.log(Math.round(1.45));
+console.log(Math.ceil(Math.random() * 10));
